@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+</head>
+<body>
+    <body class="preload">
+        <div class="container">
+          <header class="header">
+            <figure class="logo">
+                <img src="./images/logo-bonus.svg" alt="logo" />
+            </figure>
+            <div class="score">
+              <div class="score-title">score</div>
+              <div class="score-number">0</div>
+            </div>
+          </header>
+          <div class="game-container">
+
+          <section class="game">
+            <button class="choice-btn" data-choice="paper">
+                <figure class="choice paper">
+                    <img src="./images/icon-paper.svg" alt="Paper" />
+                </figure>
+            </button>
+            <button class="choice-btn" data-choice="scissors">
+                <figure class="choice scissors">
+                    <img src="./images/icon-scissors.svg" alt="Scissors" />
+                </figure>
+            </button>
+            <button class="choice-btn" data-choice="rock">
+                <figure class="choice rock">
+                    <img src="./images/icon-rock.svg" alt="Rock" />
+                </figure>
+            </button>
+            <button class="choice-btn" data-choice="lizard">
+                <figure class="choice lizard">
+                    <img src="./images/icon-lizard.svg" alt="Lizard" />
+                </figure>
+            </button>
+            <button class="choice-btn" data-choice="spock">
+                <figure class="choice spock">
+                    <img src="./images/icon-spock.svg" alt="Spock" />
+                </figure>
+            </button>
+        </section>
+        </div>
+        </div>
+        <!--Results-->
+        <section class="results hidden">
+          <h2 class="results-heading">you picked</h2>
+          <h2 class="results-heading">the house picked</h2>
+          <div class="results-result"></div>
+          <div class="results-winner hidden">
+            <h3 class="results-text"></h3>
+            <button class="play-again">play again</button>
+          </div>
+          <div class="results-result"></div>
+       </section>
+        <!--rules-->
+        <button class="rules-btn" tabindex="1">rules</button>
+        <!--Models of rules-->
+        <div class="modal">
+          <div class="modal-container">
+            <header class="modal-header">
+              <h2 class="modal-heading">rules</h2>
+              <button class="close-btn">
+                <img src="./images/icon-close.svg" alt="Close Button" />
+              </button>
+            </header>
+            <img
+              src="./images/image-rules.svg"
+              alt="Rules Image"
+              class="rules-img"
+            />
+          </div>
+        
+</body>
+<script src="app.js" defer></script>
+</html>
